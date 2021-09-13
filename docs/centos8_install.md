@@ -1,4 +1,4 @@
-# Installing OpenVK
+# Installing OpenVK 3
 
 Based on [@rem-pai](https://github.com/rem-pai)'s way to install OpenVK modified using my experience.
 

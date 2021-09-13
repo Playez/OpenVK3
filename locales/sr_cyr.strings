@@ -298,7 +298,7 @@
 "privacy_setting_write_wall" = "Ко има могућност да пиши на мојем зиду";
 "privacy_value_anybody" = "Било ко";
 "privacy_value_anybody_dative" = "Било ко";
-"privacy_value_users" = "Корисници OpenVK";
+"privacy_value_users" = "Корисници OpenVK 3";
 "privacy_value_friends" = "Пријатеље";
 "privacy_value_friends_dative" = "Пријатеље";
 "privacy_value_only_me_and_super_capite" = "Ја сам и Виталина Павленко";
@@ -396,7 +396,7 @@
 "privacy_setting_write_wall" = "Ко има могућност да пиши на мојем зиду";
 "privacy_value_anybody" = "Било ко";
 "privacy_value_anybody_dative" = "Било ко";
-"privacy_value_users" = "Корисници OpenVK";
+"privacy_value_users" = "Корисници OpenVK 3";
 "privacy_value_friends" = "Пријатеље";
 "privacy_value_friends_dative" = "Пријатеље";
 "privacy_value_only_me_and_super_capite" = "Ја сам";

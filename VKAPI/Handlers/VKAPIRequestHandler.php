@@ -30,6 +30,6 @@ abstract class VKAPIRequestHandler
     protected function requireUser(): void
     {
         if(!$this->userAuthorized())
-            $this->fail(5, "User authorization failed: no access_token passed.");
+            $this->fail(5, "User authorization failed: no access_token passed syka.");
     }
 }

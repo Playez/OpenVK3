@@ -287,7 +287,7 @@
 "privacy_setting_write_wall" = "Who can publish post on my wall";
 "privacy_value_anybody" = "Anybody";
 "privacy_value_anybody_dative" = "Anybody";
-"privacy_value_users" = "OpenVK users";
+"privacy_value_users" = "OpenVK 3 users";
 "privacy_value_friends" = "Friends";
 "privacy_value_friends_dative" = "Friends";
 "privacy_value_only_me" = "Only me";

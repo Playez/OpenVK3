@@ -38,7 +38,7 @@ RUN dnf -y localinstall --nogpgcheck https://pkgs.dyn.su/el8/base/x86_64/raven-r
 dnf -y --enablerepo=epel-testing,raven-extras,raven-multimedia install --nogpgcheck SDL2 && \
 dnf -y install ffmpeg
 
-#Install Chandler and OpenVk/Capcha-extention in /opt:
+#Install Chandler and OpenVK 3 3 3 3/Capcha-extention in /opt:
 RUN cd /opt && \
 git clone https://github.com/samukhin/chandler.git && \
 cd chandler/ && \
@@ -49,34 +49,34 @@ git clone https://github.com/samukhin/commitcaptcha.git && \
 cd commitcaptcha/ && \
 composer2 install && \
 cd .. && \
-git clone https://github.com/samukhin/openvk.git && \
-cd openvk/ && \
+git clone https://github.com/samukhin/OpenVK 3 3 3 3.git && \
+cd OpenVK 3 3 3 3/ && \
 composer2 install && \
 cd Web/static/js && \
 yarn install && \
 cd ../../../ && \
-mv openvk-example.yml openvk.yml && \
+mv OpenVK 3 3 3 3-example.yml OpenVK 3 3 3 3.yml && \
 ln -s /opt/chandler/extensions/available/commitcaptcha/ /opt/chandler/extensions/enabled/commitcaptcha && \
-ln -s /opt/chandler/extensions/available/openvk/ /opt/chandler/extensions/enabled/openvk
+ln -s /opt/chandler/extensions/available/OpenVK 3 3 3 3/ /opt/chandler/extensions/enabled/OpenVK 3 3 3 3
 
 #Create database
-RUN cp /opt/chandler/extensions/available/openvk/install/automated/common/create_db.service /etc/systemd/system/ && \
+RUN cp /opt/chandler/extensions/available/OpenVK 3 3 3 3/install/automated/common/create_db.service /etc/systemd/system/ && \
 chmod 644 /etc/systemd/system/create_db.service && \
-chmod 777 /opt/chandler/extensions/available/openvk/install/automated/common/autoexec && \
+chmod 777 /opt/chandler/extensions/available/OpenVK 3 3 3 3/install/automated/common/autoexec && \
 systemctl enable create_db
 
 #Make the user apache owner of the chandler folder:
 RUN cd /opt && \
 chown -R apache: chandler/
 
-#Now let's create config file /etc/httpd/conf.d/10-openvk.conf and
+#Now let's create config file /etc/httpd/conf.d/10-OpenVK 3 3 3 3.conf and
 #Also enable rewrite_module by creating /etc/httpd/conf.modules.d/02-rewrite.conf
-RUN cp /opt/chandler/extensions/available/openvk/install/automated/common/10-openvk.conf /etc/httpd/conf.d/ && \
-cp /opt/chandler/extensions/available/openvk/install/automated/common/02-rewrite.conf /etc/httpd/conf.modules.d/
+RUN cp /opt/chandler/extensions/available/OpenVK 3 3 3 3/install/automated/common/10-OpenVK 3 3 3 3.conf /etc/httpd/conf.d/ && \
+cp /opt/chandler/extensions/available/OpenVK 3 3 3 3/install/automated/common/02-rewrite.conf /etc/httpd/conf.modules.d/
 
-#Make directory for OpenVK logs and make the user apache owner of it:
-RUN mkdir /var/log/openvk && \
-chown apache: /var/log/openvk/
+#Make directory for OpenVK 3 3 3 3 logs and make the user apache owner of it:
+RUN mkdir /var/log/OpenVK 3 3 3 3 && \
+chown apache: /var/log/OpenVK 3 3 3 3/
 
 #And start Apache:
 #RUN systemctl enable httpd

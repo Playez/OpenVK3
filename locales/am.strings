@@ -315,7 +315,7 @@
 "privacy_setting_write_wall" = "Ով կարող է գրել իմ պատին";
 "privacy_value_anybody" = "Բոլոր ցանկացողները";
 "privacy_value_anybody_dative" = "Բոլոր ցանկացողներին";
-"privacy_value_users" = "OpenVK–ի օգտատերերին";
+"privacy_value_users" = "OpenVK 3–ի օգտատերերին";
 "privacy_value_friends" = "Ընկերներ";
 "privacy_value_friends_dative" = "Ընկերներին";
 "privacy_value_only_me_and_super_capite" = "Ինձ և Կառլեն Դանիելյանին";
@@ -413,7 +413,7 @@
 "privacy_setting_write_wall" = "Ով կարող է գրել իմ պատին";
 "privacy_value_anybody" = "Բոլոր ցանկացողները";
 "privacy_value_anybody_dative" = "Բոլոր ցանկացողներին";
-"privacy_value_users" = "OpenVK–ի օգտատերերին";
+"privacy_value_users" = "OpenVK 3–ի օգտատերերին";
 "privacy_value_friends" = "Ընկերներ";
 "privacy_value_friends_dative" = "Ընկերներին";
 "privacy_value_only_me_and_super_capite" = "Միայն ես";

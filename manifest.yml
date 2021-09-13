@@ -1,6 +1,6 @@
-name: "OpenVK 2 Electric Boogalo"
-description: "Yet another OpenVK social network"
-author: "OpenVK contributors"
-version: "2.0"
+name: "OpenVK 3 You Pidoras"
+description: "Running on OpenVK version 3 (beta)"
+author: "OpenVK 3 contributors"
+version: "3.0"
 
 init: "bootstrap.php"

@@ -287,7 +287,7 @@
 "privacy_setting_write_wall" = "Wer darf einen Post auf meine Pinnwand schreiben";
 "privacy_value_anybody" = "Jeder";
 "privacy_value_anybody_dative" = "Jeder";
-"privacy_value_users" = "OpenVK-Nutzer";
+"privacy_value_users" = "OpenVK 3-Nutzer";
 "privacy_value_friends" = "Freunde";
 "privacy_value_friends_dative" = "Freunde";
 "privacy_value_only_me" = "Nur ich";

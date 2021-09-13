@@ -1,4 +1,4 @@
-# OpenVK Installation Instructions
+# OpenVK 3 Beta Installation Instructions
 
 * * *
 

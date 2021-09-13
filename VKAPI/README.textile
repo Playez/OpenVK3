@@ -1,7 +1,7 @@
-h1. VK API Compatability layer for OpenVK
+h1. VK API Compatability layer for OpenVK 3
 
 This directory contains VK api handlers, structures and relared exceptions. It is still a work-in-progress functionality.
-**Note**: requests to api are routed through openvk.Web.Presenters.VKAPIPresenter, this dir contains only handlers.
+**Note**: requests to api are routed through OpenVK 3.Web.Presenters.VKAPIPresenter, this dir contains only handlers.
 
 h2. Implementing API methods
 
@@ -15,7 +15,7 @@ If parameter is not passed by client then router will pass default value to argu
 
 h3. Returning errors
 
-To return an error, call %fail% method like this: @$this->fail(5, "error")@ (first argument is error code and second is error message). You can also throw the exception manually: @throw new APIErrorException("error", 5)@ (class: openvk.VKAPI.Exceptions.APIErrorException).
+To return an error, call %fail% method like this: @$this->fail(5, "error")@ (first argument is error code and second is error message). You can also throw the exception manually: @throw new APIErrorException("error", 5)@ (class: OpenVK 3.VKAPI.Exceptions.APIErrorException).
 If you throw any exception that does not inherit APIErrorException then API will return error №1 (unknown error) to client.
 
 h3. Refering to user
@@ -26,6 +26,6 @@ If your method can't work without user context call @requireUser@ and it will au
 
 h3. Working with data
 
-You can use OpenVK models for that. However, **do not** return them (either you will leak data or JSON conversion will fail). It is better to create a response object and return it. It is also a good idea to define a structure in Structures subdirectory.
+You can use OpenVK 3 models for that. However, **do not** return them (either you will leak data or JSON conversion will fail). It is better to create a response object and return it. It is also a good idea to define a structure in Structures subdirectory.
 
 Have a lot of fun ^^

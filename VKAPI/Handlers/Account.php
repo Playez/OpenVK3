@@ -1,6 +1,8 @@
 <?php declare(strict_types=1);
 namespace openvk\VKAPI\Handlers;
 
+
+// lapik pidoras!
 final class Account extends VKAPIRequestHandler
 {
     function getProfileInfo(): object
@@ -24,8 +26,6 @@ final class Account extends VKAPIRequestHandler
     function getInfo(): object
     {
         $this->requireUser();
-
-        // Цiй метод є заглушка
 
         return (object) [
             "2fa_required" => 0,
@@ -54,8 +54,6 @@ final class Account extends VKAPIRequestHandler
     function setOffline(): object
     {
         $this->requireUser();
-
-        // Цiй метод є заглушка
  
         return 1;
     }

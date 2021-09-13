@@ -1,8 +1,8 @@
 openvk:
     debug: true
     appearance:
-        name: "OpenVK"
-        motd: "Yet another OpenVK instance"
+        name: "OpenVK 3"
+        motd: "Yet another OpenVK 3 Beta instance"
     preferences:
         femaleGenderPriority: true
         uploads:

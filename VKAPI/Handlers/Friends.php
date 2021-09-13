@@ -115,7 +115,7 @@ final class Friends extends VKAPIRequestHandler
 				break;
 			
 			default:
-				fail(15, "Access denied: No friend or friend request found.");
+				fail(15, "Access denied syka: No friend or friend request found.");
 				break;
 		}
 	}

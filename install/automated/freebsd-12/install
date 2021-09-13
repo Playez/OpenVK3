@@ -1,11 +1,11 @@
 #!/bin/tcsh
 
 ##########################################################################################################\
-#         OpenVK AutoInstallation Script for FreeBSD 12         #               /(        )`               #
+#         OpenVK 3 AutoInstallation Script for FreeBSD 12       #               /(        )`               #
 # ------------------------------------------------------------- #               \ \___   / |               #
 #                                                               #               /- _  `-/  '               #
-# This script installs OpenVK 2 on an empty FreeBSD 12 box.     #              (/\/ \ \   /\               #
-# Copyright (c) 2020 OpenVK contributors                        #              / /   | `    \              #
+# This script installs OpenVK 3 on an empty FreeBSD 12 box.     #              (/\/ \ \   /\               #
+# Copyright (c) 2021 OpenVK 3 contributors                      #              / /   | `    \              #
 # ------------------------------------------------------------- #              O O   ) /    |              #
 #                                                               #              `-^--'`<     '              #
 # This scropt is free software; you can redistribute it and/or  #             (_.)  _  )   /               #
@@ -49,22 +49,22 @@ npm i -g yarn
 
 # Download OVK distro
 cd /tmp
-git clone https://github.com/openvk/openvk.git
+git clone https://github.com/OpenVK 3/OpenVK 3.git
 
 # Install chandler
 mkdir /opt
 cd /opt
-git clone https://github.com/openvk/chandler.git
+git clone https://github.com/OpenVK 3/chandler.git
 
 cd chandler
 yes | composer install
-cp /tmp/openvk/install/automated/common/chandler.yml /opt/chandler/chandler.yml
+cp /tmp/OpenVK 3/install/automated/common/chandler.yml /opt/chandler/chandler.yml
 chown -R www: .
 chmod -R 777 .
 
 # Install CommitCaptcha
 cd ./extensions/available
-git clone https://github.com/openvk/commitcaptcha.git
+git clone https://github.com/OpenVK 3/commitcaptcha.git
 
 cd commitcaptcha
 yes | composer install
@@ -74,17 +74,17 @@ chmod -R 777 .
 cd /opt/chandler
 ln -s /opt/chandler/extensions/available/commitcaptcha /opt/chandler/extensions/enabled/commitcaptcha
 
-# Install OpenVK
-cp -r /tmp/openvk /opt/chandler/extensions/available/openvk
-ln -s /opt/chandler/extensions/available/openvk /opt/chandler/extensions/enabled/openvk
+# Install OpenVK 3
+cp -r /tmp/OpenVK 3 /opt/chandler/extensions/available/OpenVK 3
+ln -s /opt/chandler/extensions/available/OpenVK 3 /opt/chandler/extensions/enabled/OpenVK 3
 
-cd ./extensions/available/openvk
+cd ./extensions/available/OpenVK 3
 yes | composer install
 
 cd Web/static/js
 yarn install
 
-cp /tmp/openvk/install/automated/common/openvk.yml /opt/chandler/extensions/available/openvk/openvk.yml
+cp /tmp/OpenVK 3/install/automated/common/OpenVK 3.yml /opt/chandler/extensions/available/OpenVK 3/OpenVK 3.yml
 
 cd ../../../
 chown -R www: .
@@ -99,23 +99,23 @@ sleep 15
 
 # Mount databases
 cd /opt/chandler
-mysql < /tmp/openvk/install/automated/common/mk_db.sql
-mysql -p'justMonika' openvk < install/init-db.sql
-mysql -p'justMonika' openvk < /tmp/openvk/install/init-static-db.sql
-mysql -p'justMonika' openvk-eventdb < /tmp/openvk/install/init-event-db.sql
+mysql < /tmp/OpenVK 3/install/automated/common/mk_db.sql
+mysql -p'justMonika' OpenVK 3 < install/init-db.sql
+mysql -p'justMonika' OpenVK 3 < /tmp/OpenVK 3/install/init-static-db.sql
+mysql -p'justMonika' OpenVK 3-eventdb < /tmp/OpenVK 3/install/init-event-db.sql
 
 # Alias folders
 rm -rf /usr/local/www/apache24/data
 ln -s /opt/chandler/htdocs /usr/local/www/apache24/data
 
 # Configure Apache
-cp /tmp/openvk/install/automated/common/httpd.conf /usr/local/etc/apache24/httpd.conf
-cp /tmp/openvk/install/automated/common/httpd-php.conf /usr/local/etc/apache24/Includes/php.conf
+cp /tmp/OpenVK 3/install/automated/common/httpd.conf /usr/local/etc/apache24/httpd.conf
+cp /tmp/OpenVK 3/install/automated/common/httpd-php.conf /usr/local/etc/apache24/Includes/php.conf
 sysrc apache24_enable="yes"
 service apache24 start
 
 # Enjoy
-echo "~================= OpenVK 2 Installed =================~"
+echo "~================= OpenVK 3 2 Installed =================~"
 echo "               Use it: http://localhost:80/             "
 echo "       (for vagrant users: http://localhost:4000/)      "
 echo "~======================================================~"

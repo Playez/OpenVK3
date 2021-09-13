@@ -32,7 +32,7 @@ routes:
     - url: "/about:{?!productName}"
       handler: "About->version"
       placeholders:
-          productName: "openvk[2]?|libresoc"
+          productName: "openvk[3]?|libresoc"
     - url: "/privacy"
       handler: "About->Privacy"
     - url: "/badbrowser.php"

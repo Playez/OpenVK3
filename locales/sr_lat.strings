@@ -298,7 +298,7 @@
 "privacy_setting_write_wall" = "Ko ima mogućnost da piši na mojem zidu";
 "privacy_value_anybody" = "Bilo ko";
 "privacy_value_anybody_dative" = "Bilo ko";
-"privacy_value_users" = "Korisnici OpenVK";
+"privacy_value_users" = "Korisnici OpenVK 3";
 "privacy_value_friends" = "Prijatelje";
 "privacy_value_friends_dative" = "Prijatelje";
 "privacy_value_only_me_and_super_capite" = "Ja sam i Vitalina Pavlenko";
@@ -396,7 +396,7 @@
 "privacy_setting_write_wall" = "Ko ima mogućnost da piši na mojem zidu";
 "privacy_value_anybody" = "Bilo ko";
 "privacy_value_anybody_dative" = "Bilo ko";
-"privacy_value_users" = "Korisnici OpenVK";
+"privacy_value_users" = "Korisnici OpenVK 3";
 "privacy_value_friends" = "Prijatelje";
 "privacy_value_friends_dative" = "Prijatelje";
 "privacy_value_only_me_and_super_capite" = "Ja sam";

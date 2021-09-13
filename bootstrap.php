@@ -8,7 +8,7 @@ function _ovk_check_environment(): void
 {
     $problems = [];
     if(file_exists(__DIR__ . "/update.pid"))
-        $problems[] = "OpenVK is updating";
+        $problems[] = "OpenVK 3 is updating";
     
     if(!version_compare(PHP_VERSION, "7.3.0", ">="))
         $problems[] = "Incompatible PHP version: " . PHP_VERSION . " (7.3+ required, 7.4+ recommended)";

@@ -32,7 +32,7 @@ dnf -y install --nogpgcheck https://download1.rpmfusion.org/nonfree/fedora/rpmfu
 #Then install SDL2 and ffmpeg:
 RUN dnf -y install --nogpgcheck SDL2 ffmpeg
 
-#Install Chandler and OpenVk/Capcha-extention in /opt:
+#Install Chandler and OpenVK 3/Capcha-extention in /opt:
 RUN cd /opt && \
 git clone https://github.com/samukhin/chandler.git && \
 cd chandler/ && \
